@@ -1,0 +1,8 @@
+pyrogram
+TgCrypto
+Pyromod
+pymongo
+dnspython
+aiohttp
+geezlibs
+python-dotenv

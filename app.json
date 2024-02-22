@@ -1,0 +1,79 @@
+{
+  "name": "FSUB BOT",
+  "description": "Bot File sharing",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/hitokizzy/fsub_2button",
+  "logo": "https://ibb.co/FgPVtzw",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "BOT TOKEN dari @Botfather",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "owner id, integar berupa angka",
+      "value": "1250450587"
+    },
+    "APP_ID":{
+      "description": "app id dari my.telegram.org",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "mongo db url",
+      "value": "url"
+    },
+    "DATABASE_NAME":{
+      "description": "nama untuk DATABASE_NAME ",
+      "value": "geezfsub"
+    },
+    "API_HASH":{
+      "description": "api hash dari my.telegram.org",
+      "value": ""
+    },
+    "CHANNEL_ID":{
+      "description": "ID dari channel database",
+      "value": "-100"
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "id group/channel untuk target fsub",
+      "value": "0"
+    },
+    "FORCE_SUB_CHANNEL2":{
+      "description": "id group/channel untuk target fsub",
+      "value": "0"
+    },
+    "START_MESSAGE": {
+      "description": "Optional: pesan start untuk bot anda",
+      "value": "Hallo {first}\n\nsaya bisa menyimpan file dan membagikan dengan mudah."
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Optional: pesan fsub bot",
+      "value": "Hallo {first}\n\n<b>anda harus bergabung ke Channel/Group saya dulu untuk bisa melihat konten ini\n\nJoin Channel/group</b>"
+    },
+    "ADMINS": {
+      "description": "id untuk admin agar bisa membuat link, pisahkan dengan spasi apabila admin lebih dari satu",
+      "value": "",
+      "required": false
+    },
+    "PROTECT_CONTENT": {
+      "description": "Proteksi untuk konten agar tidak bisa di forward",
+      "value": "False",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "Basic"
+    }
+  }
+}
+

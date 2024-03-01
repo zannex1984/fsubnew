@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 load_dotenv("config.env")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7075008898:AAG5Nb11uGXAclkWI1ZNqo2vmPANP_wHCjc")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6820985394:AAEmSKjT5JYtI-iesRWbjRO8nvPHevJ5Ux8")
 
 APP_ID = int(os.getenv("APP_ID", "1634450"))
 

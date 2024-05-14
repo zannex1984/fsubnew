@@ -29,7 +29,7 @@ UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "master")
 DATABASE_TYPE = os.getenv("DATABASE_TYPE", "MONGODB")
 
 # Database
-DB_URL = os.getenv("DB_URL", "mongodb+srv://nabilayuqa:eNeRA310798@cluster0.a5fkhsp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URL = os.getenv("DB_URL", "mongodb+srv://xxxx")
 
 # Database Name MongoDB
 DB_NAME = os.getenv("DB_NAME", "nabilayuqa")
